@@ -27,16 +27,114 @@
     align-items: center;
 }
 
+.grid
+{
+    display: grid;
+}
+
 .header
 {
-    background-color: red;
+    background-color: rgb(255, 255, 255);
     grid-column: 2/-1;
-    grid-row: 1/2
+    grid-row: 1/2;
+    grid-template-columns: 3fr 1fr;
+    align-items: center;
+    padding: 24px;
+    gap: 24px;
+    position: relative;
+    z-index: 10;
+    box-shadow: 0 6px 5px rgb(183, 180, 180)
+}
+
+.search
+{
+    margin-left: 28px;
+}
+
+.Search_Icon
+{
+    width: 38px;
+    height: 38px;
+    margin-left: -8px;
+}
+
+.Search_Bar
+{
+    background-color: rgb(221, 220, 220);
+    border: none;
+    border-radius: 15px;
+    height: 40px;
+    width: 80%
+}
+
+.profile_and_notification
+{
+    justify-content: space-around;
+    font-size: 28px;
+    font-weight: 700;
+    gap: 24px;
+    margin-right: 50px;
+}
+
+.Small_Profile_Icon
+{
+    width: 82px;
+    height: 82px;
+}
+
+.Big_Profile_Icon
+{
+    width: 120px;
+    height: 120px;   
+    margin-left: -18px;
+}
+
+.profile_and_name
+{
+    margin-left: 25px;
+}
+
+.Greetings /*Div*/
+{
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 25px;
+}
+
+.greeting
+{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.Big_Profile_Name
+{
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.action_buttons
+{
+    margin-top: 24px;
+    gap: 30px;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.btn
+{
+    background-color: #3882F6;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    font-weight: 500;
+    font-size: 22px;
+    width: 130px;
+    height: 60px;
 }
 
 .sidebar
 {
-    display: grid;
     grid-template-rows: 0.5fr 3fr 5fr;
     gap: 75px;
     background-color: aqua;
@@ -84,7 +182,7 @@
 
 .main_content
 {
-    background-color: grey;
+    background-color: rgb(255, 255, 255);
     grid-column: 2/-1;
     grid-row: 2/-1;
 }
