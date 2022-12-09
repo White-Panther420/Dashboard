@@ -1,0 +1,90 @@
+@font-face
+{
+    font-family: "CustomFont";
+    src: url(./Fonts/Roboto/Roboto-Medium.ttf);
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: "CustomFont";
+}
+
+.content
+{
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1.2fr 4.8fr;
+    grid-template-rows: 1fr 3fr;
+}
+
+.flex  /*All items with a flex class will have a flex display*/
+{
+    display: flex;
+    gap: 12px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.header
+{
+    background-color: red;
+    grid-column: 2/-1;
+    grid-row: 1/2
+}
+
+.sidebar
+{
+    display: grid;
+    grid-template-rows: 0.5fr 3fr 5fr;
+    gap: 75px;
+    background-color: aqua;
+    grid-column: 1/2;
+    grid-row: 1/-1;
+}
+
+.dashboard
+{
+    margin-top: 20px;
+    margin-left: 32px;
+}
+
+.dashboard p
+{
+    font-size: 46px;
+    font-weight: 500;
+}
+
+.logo
+{
+    width: 62px;
+    height: 62px;
+    margin-right: 8px;
+}
+
+.Icon
+{
+    width: 38px;
+    height: 38px;
+    margin-right: 20px;
+}
+
+.dashboard_options
+{
+    /*background-color: red;*/
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    gap: 32px;
+    margin-left: 44px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.main_content
+{
+    background-color: grey;
+    grid-column: 2/-1;
+    grid-row: 2/-1;
+}
