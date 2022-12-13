@@ -219,7 +219,7 @@
 .Projects
 {
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    grid-auto-rows: 500px;
+    grid-auto-rows: 475px;
     gap: 30px;
     justify-items: stretch;
 }
@@ -230,8 +230,8 @@
     box-shadow: 6px 6px 5px rgb(183, 180, 180);
     border-radius: 15px;
     border-left: 12px #627089 solid;
-    background-color: rgb(255, 0, 0);
-    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;  /*Prevents issue of missing row gaps when zooming in all the way*/
 }
 
 .Project_Img
@@ -256,7 +256,7 @@ h3,
 .Action_icons
 {
     margin-right: 32px;
-    margin-top: 8px;
+    margin-top: 16px;
     align-self: flex-end;
     flex-shrink: 1;
 }
