@@ -15,7 +15,7 @@
 {
     margin: 0;
     display: grid;
-    grid-template-columns: 1.2fr 4.8fr;
+    grid-template-columns: 1fr 4.8fr;
     grid-template-rows: 0.4fr 3.6fr;
 }
 
@@ -155,21 +155,21 @@
 
 .dashboard p
 {
-    font-size: 38px;
+    font-size: 34px;
     font-weight: 500;
 }
 
 .logo
 {
-    width: 54px;
-    height: 54px;
+    width: 44px;
+    height: 44px;
     margin-right: 8px;
 }
 
 .Icon
 {
-    width: 30px;
-    height: 30px;
+    width: 22px;
+    height: 22px;
     margin-right: 20px;
 }
 
@@ -181,17 +181,18 @@
     justify-items: center;
     gap: 32px;
     margin-left: 44px;
-    font-size: 26px;
+    font-size: 22px;
     font-weight: 500;
+    margin-top: 2px;
 }
 
 /****************Project Display Section****************/
 .main_content
 {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(237, 237, 237);
     grid-column: 2/-1;
     grid-row: 2/-1;
-    grid-template-columns: 1fr 0.3fr;
+    grid-template-columns: 1fr 0.4fr;
     padding-top: 30px;
     gap: 30px;
 }
@@ -223,23 +224,14 @@
     justify-items: stretch;
 }
 
-.Project
-{
-    grid-template-columns: 1fr;
-}
-
-.accent
-{
-    background-color: blue;
-    border-radius: 15px;
-}
-
 .Project_Content
 {
     flex-direction: column;
     box-shadow: 6px 6px 5px rgb(183, 180, 180);
     border-radius: 15px;
     border-left: 12px #627089 solid;
+    background-color: rgb(255, 0, 0);
+    overflow: hidden;
 }
 
 .Project_Img
@@ -266,4 +258,29 @@ h3,
     margin-right: 32px;
     margin-top: 8px;
     align-self: flex-end;
+    flex-shrink: 1;
+}
+
+.Right_Content
+{
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 450px;
+    margin-right: 30px;
+    margin-left: 10px;
+}
+
+.Announcement_Content_div
+{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 125px);
+    background-color: #fff;
+    padding: 40px;
+}
+
+.Announcement_div
+{
+    flex-direction: column;
+    align-items: start;
+    border-bottom: 1px rgb(97, 96, 96) solid;
+    background-color: #fff;
 }
