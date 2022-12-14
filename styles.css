@@ -15,7 +15,7 @@
 {
     margin: 0;
     display: grid;
-    grid-template-columns: 1fr 4.8fr;
+    grid-template-columns: 1fr 5fr;
     grid-template-rows: 0.4fr 3.6fr;
 }
 
@@ -64,7 +64,7 @@
     background-color: rgb(221, 220, 220);
     border: none;
     border-radius: 15px;
-    height: 40px;
+    height: 30px;
     width: 80%;
     font-size: 22px;
     padding-left: 16px;
@@ -75,20 +75,30 @@
     font-size: 26px;
     font-weight: 700;
     margin-right: 65px;
-    gap: 34px;
+    gap: 20px;
     justify-content: flex-end;
 }
 
 .Small_Profile_Icon
 {
-    width: 66px;
-    height: 66px;
+    width: 46px;
+    height: 46px;
+}
+
+.Bell
+{
+    margin-right: -10px;
+}
+
+.Profile_Name
+{
+    font-size: 18px;
 }
 
 .Big_Profile_Icon
 {
-    width: 100px;
-    height: 100px;   
+    width: 70px;
+    height: 70px;   
     margin-left: -18px;
 }
 
@@ -101,26 +111,27 @@
 {
     flex-direction: column;
     align-items: flex-start;
-    margin-left: 25px;
+    margin-left: 8px;
 }
 
 .greeting
 {
-    font-size: 22px;
+    font-size: 12px;
     font-weight: 700;
 }
 
 .Big_Profile_Name
 {
-    font-size: 34px;
+    font-size: 22px;
     font-weight: 700;
 }
 
 .action_buttons
 {
     margin-top: 24px;
-    gap: 50px;
-    align-items: center;
+    gap: 30px;
+    align-items: flex-end;
+    justify-content: flex-end;
     margin-right: 50px;
 }
 
@@ -131,16 +142,16 @@
     border-radius: 25px;
     color: white;
     font-weight: 500;
-    font-size: 22px;
-    width: 160px;
-    height: 60px;
+    font-size: 18px;
+    width: 100px;
+    height: 35px;
 }
 
 /****************Sidebar Section****************/
 .sidebar
 {
-    grid-template-rows: 90px 380px 600px;
-    gap: 75px;
+    grid-template-rows: 90px 260px 300px;
+    gap: 65px;
     background-color: #627089;
     grid-column: 1/2;
     grid-row: 1/-1;
@@ -150,27 +161,27 @@
 .dashboard
 {
     margin-top: 20px;
-    margin-left: 32px;
+    margin-left: 20px;
 }
 
 .dashboard p
 {
-    font-size: 34px;
+    font-size: 28px;
     font-weight: 500;
 }
 
 .logo
 {
-    width: 44px;
-    height: 44px;
-    margin-right: 8px;
+    width: 36px;
+    height: 36px;
+    margin-right: 5px;
 }
 
 .Icon
 {
-    width: 22px;
-    height: 22px;
-    margin-right: 20px;
+    width: 20px;
+    height: 20px;
+    margin-right: 6px;
 }
 
 .dashboard_options
@@ -179,11 +190,11 @@
     display: flex;
     flex-direction: column;
     justify-items: center;
-    gap: 32px;
-    margin-left: 44px;
-    font-size: 22px;
+    gap: 24px;
+    margin-left: 28px;
+    font-size: 20px;
     font-weight: 500;
-    margin-top: 2px;
+    margin-top: -30px;
 }
 
 /****************Project Display Section****************/
@@ -264,9 +275,8 @@ h3,
 .Right_Content
 {
     grid-template-columns: 1fr;
-    grid-template-rows: 50px 500px;
+    grid-template-rows: 50px 31%;
     margin-right: 30px;
-    margin-left: 10px;
 }
 
 .Announcement_Content_div
@@ -275,9 +285,11 @@ h3,
     grid-template-rows: repeat(3, 1fr);
     align-content: center;
     background-color: #fff;
-    padding: 40px;
-    gap: 12px;
-    overflow: scroll;
+    padding: 30px;
+    padding-right: 20px;
+    gap: 20px;
+    box-shadow: 6px 6px 5px rgb(183, 180, 180);
+    border-radius: 15px;
 }
 
 .Announcement_div,
@@ -286,17 +298,25 @@ h3,
     flex-direction: column;
     align-items: start;
     justify-content: center;
-    border-bottom: 1px rgb(97, 96, 96) solid;
+    border-bottom: 1px rgb(209, 203, 203) solid;
+    padding-left: 12px;
 }
 
 .Announcement_div_special
 {
     border-bottom: none;
+    margin-top: 15px;
 }
 
 .Announcement
 {
-    font-size: 20px;
-    font-weight: 700;
-    margin-top: -10px;
+    font-size: 17px;
+    font-weight: 600;
+    margin-top: -15px;
+}
+
+.Announcement_Description
+{
+    font-size: 15px;
+    margin-top: -5px;
 }
