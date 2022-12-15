@@ -79,7 +79,8 @@
     justify-content: flex-end;
 }
 
-.Small_Profile_Icon
+.Small_Profile_Icon,
+.User_Icon
 {
     width: 46px;
     height: 46px;
@@ -208,7 +209,8 @@
     gap: 30px;
 }
 
-.Content_Title
+.Content_Title,
+.Trending_Title
 {
     font-size: 28px;
     font-weight: 700;
@@ -274,8 +276,8 @@ h3,
 
 .Right_Content
 {
-    grid-template-columns: 1fr;
-    grid-template-rows: 50px 31%;
+    flex-direction: column;
+    align-items: flex-start;
     margin-right: 30px;
 }
 
@@ -290,6 +292,8 @@ h3,
     gap: 20px;
     box-shadow: 6px 6px 5px rgb(183, 180, 180);
     border-radius: 15px;
+    height: 27%;
+    margin-top: 5px;
 }
 
 .Announcement_div,
@@ -319,4 +323,21 @@ h3,
 {
     font-size: 15px;
     margin-top: -5px;
+}
+
+.Trending_Title
+{
+    margin-top: 50px;
+}
+
+.Trendng_Content
+{
+    height: 30%;
+    gap: 20px;
+    background-color: red;
+}
+
+.Trending_Div
+{
+    background-color: greenyellow;
 }
