@@ -79,8 +79,7 @@
     justify-content: flex-end;
 }
 
-.Small_Profile_Icon,
-.User_Icon
+.Small_Profile_Icon
 {
     width: 46px;
     height: 46px;
@@ -117,13 +116,13 @@
 
 .greeting
 {
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 700;
 }
 
 .Big_Profile_Name
 {
-    font-size: 22px;
+    font-size: 24px;
     font-weight: 700;
 }
 
@@ -206,6 +205,7 @@
     grid-row: 2/-1;
     grid-template-columns: 1fr 0.4fr;
     padding-top: 30px;
+    padding-right: 20px;
     gap: 30px;
 }
 
@@ -277,7 +277,7 @@ h3,
 .Right_Content
 {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: stretch;
     margin-right: 30px;
 }
 
@@ -285,14 +285,12 @@ h3,
 {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
-    align-content: center;
+    align-content: stretch;
     background-color: #fff;
-    padding: 30px;
-    padding-right: 20px;
-    gap: 20px;
+    padding: 0px;
     box-shadow: 6px 6px 5px rgb(183, 180, 180);
     border-radius: 15px;
-    height: 27%;
+    height: 28.3%;
     margin-top: 5px;
 }
 
@@ -303,25 +301,32 @@ h3,
     align-items: start;
     justify-content: center;
     border-bottom: 1px rgb(209, 203, 203) solid;
-    padding-left: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 100%;
 }
 
 .Announcement_div_special
 {
     border-bottom: none;
-    margin-top: 15px;
+}
+
+.Announcement_div:hover,
+.Announcement_div_special:hover
+{
+    background-color: aqua;
 }
 
 .Announcement
 {
-    font-size: 17px;
+    font-size: 20px;
     font-weight: 600;
     margin-top: -15px;
 }
 
 .Announcement_Description
 {
-    font-size: 15px;
+    font-size: 14px;
     margin-top: -5px;
 }
 
@@ -332,12 +337,31 @@ h3,
 
 .Trendng_Content
 {
-    height: 30%;
-    gap: 20px;
-    background-color: red;
+    grid-template-columns: repeat(auto-fit, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    padding: 50px 10px 50px 40px;
+    gap: 40px;
+    box-shadow: 6px 6px 5px rgb(183, 180, 180);
+    border-radius: 15px;
+    justify-items: stretch;
+    background-color: white;
 }
 
-.Trending_Div
+.User_Icon
 {
-    background-color: greenyellow;
+    width: 70px;
+    height: 70px;   
+    margin-right: 10px;
+}
+
+.User_Name
+{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.Project_Name
+{
+    font-size: 20px;
+    margin-top: 8px;
 }
